@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(#141e30, #243b55);
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 15px
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+.menu ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+.menu ul li a:hover{
+    color: #ff7200;
+}
+
+hr{
+    border: 1px solid #243b55;
+}
+
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 50px;
+}
+.about-content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 80%;
+	height: auto;
+}
+.about-content-section .title{
+	font-size: 22px;
+    color: #ff7200;
+}
+.about-content-section .about-content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+    color: white;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.about-content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.about-content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+}
+.profile-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.mentor-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mentor-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.profile-container .profile-card{
+    width: 220px;
+    height: 350px;
+    padding: 30px 10px;
+    margin: 50px;
+    background: #243b55;
+    box-shadow: 0.6em 0.6em 1.2em #141e30,
+                -0.5em -0.5em 1em #141e30;
+    border-radius: 20px;
+}
+.mentor-container .mentor-card{
+    width: 300px;
+    height: 400px;
+    padding: 40px 20px;
+    margin: 50px;
+    background: #243b55;
+    box-shadow: 0.6em 0.6em 1.2em #141e30,
+                -0.5em -0.5em 1em #141e30;
+    border-radius: 20px;
+}
+.profile-container .profile-card .profile-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+.mentor-container .mentor-card .mentor-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+.profile-container .profile-card .profile-content .imgBx{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.mentor-container .mentor-card .mentor-content .mentor-imgBx{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.profile-container .profile-card .profile-content .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mentor-container .mentor-card .mentor-content .mentor-imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-container .profile-card .profile-content .profile-contentBx h4{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+.mentor-container .mentor-card .mentor-content .mentor-contentBx h4{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+}
+.profile-container .profile-card .profile-content .profile-contentBx h5{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+}
+.mentor-container .mentor-card .mentor-content .mentor-contentBx h5{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4px;
+}
+.profile-container .profile-card .profile-content .sci{
+    margin-top: 20px;
+}
+.mentor-container .mentor-card .mentor-content .sci{
+    margin-top: 25px;
+}
+.profile-container .profile-card .profile-content .sci a{
+    text-decoration: none;
+    color: #6c758f;
+    font-size: 25px;
+    margin: 10px;
+    transition: color 0.4s;
+}
+.mentor-container .mentor-card .mentor-content .sci a{
+    text-decoration: none;
+    color: #6c758f;
+    font-size: 30px;
+    margin: 10px;
+    transition: color 0.4s;
+}
+.profile-container .profile-card .profile-content .sci a:hover{
+    color: #ff7200;
+}
+.mentor-container .mentor-card .mentor-content .sci a:hover{
+    color: #ff7200;
+}
+
+.contact_section{
+    height: 50%;
+    box-sizing: border-box;
+    position: relative;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.contact_section .contact-content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact_section .contact-content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #ff7200;
+    margin-top: -20%;
+}
+hr{
+    border: 1px solid #243b55;
+}
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-container .contactInfo .contact-box{
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+}
+.contact-container .contactInfo .contact-box .contact-icon{
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff7200 ;
+    border-radius: 50%;
+    font-size: 15px;
+}
+.contact-container .contactInfo .contact-box .contact-text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contact-container .contactInfo .contact-box .contact-text h3{
+    font-weight: 500;
+    color: #ff7200;
+}
+.contactForm{
+    width: 30%;
+    padding: 15px;
+    background-color: #141e30;
+    border-radius: 10px;
+}
+.contactForm h2{
+    font-size: 20px;
+    color:#ff7200;
+    font-weight: 500;
+    float: right;
+}
+.contactForm .contact-inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 2px;
+}
+.contactForm .contact-inputBox input,
+.contactForm .contact-inputBox textarea{
+    width: 100%;
+    padding: 3px 0;
+    font-size: 16px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 2px solid #243b55;
+    outline: none;
+    background-color: #141e30;
+    resize: none;
+}
+.contactForm .contact-inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 12px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: gray;
+}
+input, textarea{
+    color: #fff;
+}
+.contactForm .contact-inputBox input:focus ~ span,
+.contactForm .contact-inputBox input:valid ~ span,
+.contactForm .contact-inputBox textarea:focus ~ span,
+.contactForm .contact-inputBox textarea:valid ~ span{
+    color: #ff7200;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .contact-inputBox input[type="submit"]{
+    width: 100px;
+    background: #243b55;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+@media (max-width:991px)
+{
+    .contact_section{
+        padding: 50px;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .contact-container .contactInfo, .contactForm{
+        width: 100%;
+    }
+
+}
+
+footer {
+    text-align: center;
+    background-color: #141e30;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
